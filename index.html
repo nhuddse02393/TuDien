@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let engWord = ["apple","orange","dog","cat"];
+    let vietWord = ["quả táo","quả cam","con chó","con mèo"];
+
+    let input = prompt("Enter word!");
+    let output = "";
+    let flag = false;
+
+    for(let i=0; i<engWord.length; i++)
+        if(engWord[i]===input) {
+            output = vietWord[i];
+            flag = true;
+            break;
+        }
+    if(flag==true)
+        alert(""+input+" = "+output);
+    else
+        alert("Can not search!");
+
+</script>
+</body>
+</html>
